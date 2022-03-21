@@ -1,0 +1,1016 @@
+{
+  "implication" : {
+    "name" : "has_intensity",
+    "args" : [
+      {
+        "FixedArg" : {
+          "symbol" : "medium"
+        }
+      }
+    ]
+  },
+  "conditions" : [
+    {
+      "name" : "mood",
+      "args" : [
+        {
+          "FixedArg" : {
+            "symbol" : "happy"
+          }
+        }
+      ]
+    }
+  ]
+}{
+  "implication" : {
+    "name" : "has_intensity",
+    "args" : [
+      {
+        "FixedArg" : {
+          "symbol" : "high"
+        }
+      }
+    ]
+  },
+  "conditions" : [
+    {
+      "name" : "mood",
+      "args" : [
+        {
+          "FixedArg" : {
+            "symbol" : "exuberant"
+          }
+        }
+      ]
+    }
+  ]
+}{
+  "implication" : {
+    "name" : "has_intensity",
+    "args" : [
+      {
+        "FixedArg" : {
+          "symbol" : "very_high"
+        }
+      }
+    ]
+  },
+  "conditions" : [
+    {
+      "name" : "mood",
+      "args" : [
+        {
+          "FixedArg" : {
+            "symbol" : "energetic"
+          }
+        }
+      ]
+    }
+  ]
+}{
+  "implication" : {
+    "name" : "has_intensity",
+    "args" : [
+      {
+        "FixedArg" : {
+          "symbol" : "high"
+        }
+      }
+    ]
+  },
+  "conditions" : [
+    {
+      "name" : "mood",
+      "args" : [
+        {
+          "FixedArg" : {
+            "symbol" : "frantic"
+          }
+        }
+      ]
+    }
+  ]
+}{
+  "implication" : {
+    "name" : "has_intensity",
+    "args" : [
+      {
+        "FixedArg" : {
+          "symbol" : "medium"
+        }
+      }
+    ]
+  },
+  "conditions" : [
+    {
+      "name" : "mood",
+      "args" : [
+        {
+          "FixedArg" : {
+            "symbol" : "sad"
+          }
+        }
+      ]
+    }
+  ]
+}{
+  "implication" : {
+    "name" : "has_intensity",
+    "args" : [
+      {
+        "FixedArg" : {
+          "symbol" : "low"
+        }
+      }
+    ]
+  },
+  "conditions" : [
+    {
+      "name" : "mood",
+      "args" : [
+        {
+          "FixedArg" : {
+            "symbol" : "depression"
+          }
+        }
+      ]
+    }
+  ]
+}{
+  "implication" : {
+    "name" : "has_intensity",
+    "args" : [
+      {
+        "FixedArg" : {
+          "symbol" : "very_low"
+        }
+      }
+    ]
+  },
+  "conditions" : [
+    {
+      "name" : "mood",
+      "args" : [
+        {
+          "FixedArg" : {
+            "symbol" : "calm"
+          }
+        }
+      ]
+    }
+  ]
+}{
+  "implication" : {
+    "name" : "has_intensity",
+    "args" : [
+      {
+        "FixedArg" : {
+          "symbol" : "low"
+        }
+      }
+    ]
+  },
+  "conditions" : [
+    {
+      "name" : "mood",
+      "args" : [
+        {
+          "FixedArg" : {
+            "symbol" : "contentment"
+          }
+        }
+      ]
+    }
+  ]
+}{
+  "implication" : {
+    "name" : "has_pitch",
+    "args" : [
+      {
+        "FixedArg" : {
+          "symbol" : "very_high"
+        }
+      }
+    ]
+  },
+  "conditions" : [
+    {
+      "name" : "mood",
+      "args" : [
+        {
+          "FixedArg" : {
+            "symbol" : "happy"
+          }
+        }
+      ]
+    }
+  ]
+}{
+  "implication" : {
+    "name" : "has_pitch",
+    "args" : [
+      {
+        "FixedArg" : {
+          "symbol" : "high"
+        }
+      }
+    ]
+  },
+  "conditions" : [
+    {
+      "name" : "mood",
+      "args" : [
+        {
+          "FixedArg" : {
+            "symbol" : "exuberant"
+          }
+        }
+      ]
+    }
+  ]
+}{
+  "implication" : {
+    "name" : "has_pitch",
+    "args" : [
+      {
+        "FixedArg" : {
+          "symbol" : "medium"
+        }
+      }
+    ]
+  },
+  "conditions" : [
+    {
+      "name" : "mood",
+      "args" : [
+        {
+          "FixedArg" : {
+            "symbol" : "energetic"
+          }
+        }
+      ]
+    }
+  ]
+}{
+  "implication" : {
+    "name" : "has_pitch",
+    "args" : [
+      {
+        "FixedArg" : {
+          "symbol" : "low"
+        }
+      }
+    ]
+  },
+  "conditions" : [
+    {
+      "name" : "mood",
+      "args" : [
+        {
+          "FixedArg" : {
+            "symbol" : "frantic"
+          }
+        }
+      ]
+    }
+  ]
+}{
+  "implication" : {
+    "name" : "has_pitch",
+    "args" : [
+      {
+        "FixedArg" : {
+          "symbol" : "very_low"
+        }
+      }
+    ]
+  },
+  "conditions" : [
+    {
+      "name" : "mood",
+      "args" : [
+        {
+          "FixedArg" : {
+            "symbol" : "sad"
+          }
+        }
+      ]
+    }
+  ]
+}{
+  "implication" : {
+    "name" : "has_pitch",
+    "args" : [
+      {
+        "FixedArg" : {
+          "symbol" : "low"
+        }
+      }
+    ]
+  },
+  "conditions" : [
+    {
+      "name" : "mood",
+      "args" : [
+        {
+          "FixedArg" : {
+            "symbol" : "depression"
+          }
+        }
+      ]
+    }
+  ]
+}{
+  "implication" : {
+    "name" : "has_pitch",
+    "args" : [
+      {
+        "FixedArg" : {
+          "symbol" : "medium"
+        }
+      }
+    ]
+  },
+  "conditions" : [
+    {
+      "name" : "mood",
+      "args" : [
+        {
+          "FixedArg" : {
+            "symbol" : "calm"
+          }
+        }
+      ]
+    }
+  ]
+}{
+  "implication" : {
+    "name" : "has_pitch",
+    "args" : [
+      {
+        "FixedArg" : {
+          "symbol" : "high"
+        }
+      }
+    ]
+  },
+  "conditions" : [
+    {
+      "name" : "mood",
+      "args" : [
+        {
+          "FixedArg" : {
+            "symbol" : "contentment"
+          }
+        }
+      ]
+    }
+  ]
+}{
+  "implication" : {
+    "name" : "has_timbre",
+    "args" : [
+      {
+        "FixedArg" : {
+          "symbol" : "medium"
+        }
+      }
+    ]
+  },
+  "conditions" : [
+    {
+      "name" : "mood",
+      "args" : [
+        {
+          "FixedArg" : {
+            "symbol" : "happy"
+          }
+        }
+      ]
+    }
+  ]
+}{
+  "implication" : {
+    "name" : "has_timbre",
+    "args" : [
+      {
+        "FixedArg" : {
+          "symbol" : "medium"
+        }
+      }
+    ]
+  },
+  "conditions" : [
+    {
+      "name" : "mood",
+      "args" : [
+        {
+          "FixedArg" : {
+            "symbol" : "exuberant"
+          }
+        }
+      ]
+    }
+  ]
+}{
+  "implication" : {
+    "name" : "has_timbre",
+    "args" : [
+      {
+        "FixedArg" : {
+          "symbol" : "medium"
+        }
+      }
+    ]
+  },
+  "conditions" : [
+    {
+      "name" : "mood",
+      "args" : [
+        {
+          "FixedArg" : {
+            "symbol" : "energetic"
+          }
+        }
+      ]
+    }
+  ]
+}{
+  "implication" : {
+    "name" : "has_timbre",
+    "args" : [
+      {
+        "FixedArg" : {
+          "symbol" : "very_high"
+        }
+      }
+    ]
+  },
+  "conditions" : [
+    {
+      "name" : "mood",
+      "args" : [
+        {
+          "FixedArg" : {
+            "symbol" : "frantic"
+          }
+        }
+      ]
+    }
+  ]
+}{
+  "implication" : {
+    "name" : "has_timbre",
+    "args" : [
+      {
+        "FixedArg" : {
+          "symbol" : "low"
+        }
+      }
+    ]
+  },
+  "conditions" : [
+    {
+      "name" : "mood",
+      "args" : [
+        {
+          "FixedArg" : {
+            "symbol" : "sad"
+          }
+        }
+      ]
+    }
+  ]
+}{
+  "implication" : {
+    "name" : "has_timbre",
+    "args" : [
+      {
+        "FixedArg" : {
+          "symbol" : "very_low"
+        }
+      }
+    ]
+  },
+  "conditions" : [
+    {
+      "name" : "mood",
+      "args" : [
+        {
+          "FixedArg" : {
+            "symbol" : "depression"
+          }
+        }
+      ]
+    }
+  ]
+}{
+  "implication" : {
+    "name" : "has_timbre",
+    "args" : [
+      {
+        "FixedArg" : {
+          "symbol" : "low"
+        }
+      }
+    ]
+  },
+  "conditions" : [
+    {
+      "name" : "mood",
+      "args" : [
+        {
+          "FixedArg" : {
+            "symbol" : "calm"
+          }
+        }
+      ]
+    }
+  ]
+}{
+  "implication" : {
+    "name" : "has_timbre",
+    "args" : [
+      {
+        "FixedArg" : {
+          "symbol" : "very_low"
+        }
+      }
+    ]
+  },
+  "conditions" : [
+    {
+      "name" : "mood",
+      "args" : [
+        {
+          "FixedArg" : {
+            "symbol" : "contentment"
+          }
+        }
+      ]
+    }
+  ]
+}{
+  "implication" : {
+    "name" : "has_rhythm",
+    "args" : [
+      {
+        "FixedArg" : {
+          "symbol" : "very_high"
+        }
+      }
+    ]
+  },
+  "conditions" : [
+    {
+      "name" : "mood",
+      "args" : [
+        {
+          "FixedArg" : {
+            "symbol" : "happy"
+          }
+        }
+      ]
+    }
+  ]
+}{
+  "implication" : {
+    "name" : "has_rhythm",
+    "args" : [
+      {
+        "FixedArg" : {
+          "symbol" : "high"
+        }
+      }
+    ]
+  },
+  "conditions" : [
+    {
+      "name" : "mood",
+      "args" : [
+        {
+          "FixedArg" : {
+            "symbol" : "exuberant"
+          }
+        }
+      ]
+    }
+  ]
+}{
+  "implication" : {
+    "name" : "has_rhythm",
+    "args" : [
+      {
+        "FixedArg" : {
+          "symbol" : "high"
+        }
+      }
+    ]
+  },
+  "conditions" : [
+    {
+      "name" : "mood",
+      "args" : [
+        {
+          "FixedArg" : {
+            "symbol" : "energetic"
+          }
+        }
+      ]
+    }
+  ]
+}{
+  "implication" : {
+    "name" : "has_rhythm",
+    "args" : [
+      {
+        "FixedArg" : {
+          "symbol" : "very_high"
+        }
+      }
+    ]
+  },
+  "conditions" : [
+    {
+      "name" : "mood",
+      "args" : [
+        {
+          "FixedArg" : {
+            "symbol" : "frantic"
+          }
+        }
+      ]
+    }
+  ]
+}{
+  "implication" : {
+    "name" : "has_rhythm",
+    "args" : [
+      {
+        "FixedArg" : {
+          "symbol" : "low"
+        }
+      }
+    ]
+  },
+  "conditions" : [
+    {
+      "name" : "mood",
+      "args" : [
+        {
+          "FixedArg" : {
+            "symbol" : "sad"
+          }
+        }
+      ]
+    }
+  ]
+}{
+  "implication" : {
+    "name" : "has_rhythm",
+    "args" : [
+      {
+        "FixedArg" : {
+          "symbol" : "low"
+        }
+      }
+    ]
+  },
+  "conditions" : [
+    {
+      "name" : "mood",
+      "args" : [
+        {
+          "FixedArg" : {
+            "symbol" : "depression"
+          }
+        }
+      ]
+    }
+  ]
+}{
+  "implication" : {
+    "name" : "has_rhythm",
+    "args" : [
+      {
+        "FixedArg" : {
+          "symbol" : "very_low"
+        }
+      }
+    ]
+  },
+  "conditions" : [
+    {
+      "name" : "mood",
+      "args" : [
+        {
+          "FixedArg" : {
+            "symbol" : "calm"
+          }
+        }
+      ]
+    }
+  ]
+}{
+  "implication" : {
+    "name" : "has_rhythm",
+    "args" : [
+      {
+        "FixedArg" : {
+          "symbol" : "low"
+        }
+      }
+    ]
+  },
+  "conditions" : [
+    {
+      "name" : "mood",
+      "args" : [
+        {
+          "FixedArg" : {
+            "symbol" : "contentment"
+          }
+        }
+      ]
+    }
+  ]
+}{
+  "implication" : {
+    "name" : "has_genre",
+    "args" : [
+      {
+        "VariableArg" : {
+          "symbol" : "Genre"
+        }
+      }
+    ]
+  },
+  "conditions" : [
+    {
+      "name" : "liked_artist",
+      "args" : [
+        {
+          "VariableArg" : {
+            "symbol" : "Name"
+          }
+        }
+      ]
+    },
+    {
+      "name" : "artist",
+      "args" : [
+        {
+          "VariableArg" : {
+            "symbol" : "Name"
+          }
+        },
+        {
+          "DK" : {
+            
+          }
+        },
+        {
+          "VariableArg" : {
+            "symbol" : "Genre"
+          }
+        }
+      ]
+    }
+  ]
+}{
+  "implication" : {
+    "name" : "artist_country",
+    "args" : [
+      {
+        "VariableArg" : {
+          "symbol" : "Country"
+        }
+      }
+    ]
+  },
+  "conditions" : [
+    {
+      "name" : "living_in",
+      "args" : [
+        {
+          "VariableArg" : {
+            "symbol" : "Country"
+          }
+        }
+      ]
+    }
+  ]
+}{
+  "implication" : {
+    "name" : "artist_country",
+    "args" : [
+      {
+        "VariableArg" : {
+          "symbol" : "Country"
+        }
+      }
+    ]
+  },
+  "conditions" : [
+    {
+      "name" : "liked_artist",
+      "args" : [
+        {
+          "VariableArg" : {
+            "symbol" : "Name"
+          }
+        }
+      ]
+    },
+    {
+      "name" : "artist",
+      "args" : [
+        {
+          "VariableArg" : {
+            "symbol" : "Name"
+          }
+        },
+        {
+          "VariableArg" : {
+            "symbol" : "Country"
+          }
+        },
+        {
+          "DK" : {
+            
+          }
+        }
+      ]
+    }
+  ]
+}{
+  "implication" : {
+    "name" : "suggested_song",
+    "args" : [
+      {
+        "VariableArg" : {
+          "symbol" : "SongName"
+        }
+      },
+      {
+        "VariableArg" : {
+          "symbol" : "ArtistName"
+        }
+      }
+    ]
+  },
+  "conditions" : [
+    {
+      "name" : "artist_country",
+      "args" : [
+        {
+          "VariableArg" : {
+            "symbol" : "ArtistCountry"
+          }
+        }
+      ]
+    },
+    {
+      "name" : "has_intensity",
+      "args" : [
+        {
+          "VariableArg" : {
+            "symbol" : "I"
+          }
+        }
+      ]
+    },
+    {
+      "name" : "has_timbre",
+      "args" : [
+        {
+          "VariableArg" : {
+            "symbol" : "T"
+          }
+        }
+      ]
+    },
+    {
+      "name" : "has_pitch",
+      "args" : [
+        {
+          "VariableArg" : {
+            "symbol" : "P"
+          }
+        }
+      ]
+    },
+    {
+      "name" : "has_rhythm",
+      "args" : [
+        {
+          "VariableArg" : {
+            "symbol" : "R"
+          }
+        }
+      ]
+    },
+    {
+      "name" : "has_genre",
+      "args" : [
+        {
+          "VariableArg" : {
+            "symbol" : "Genre"
+          }
+        }
+      ]
+    },
+    {
+      "name" : "song",
+      "args" : [
+        {
+          "VariableArg" : {
+            "symbol" : "SongName"
+          }
+        },
+        {
+          "Predicate" : {
+            "name" : "artist",
+            "args" : [
+              {
+                "VariableArg" : {
+                  "symbol" : "ArtistName"
+                }
+              },
+              {
+                "VariableArg" : {
+                  "symbol" : "ArtistCountry"
+                }
+              },
+              {
+                "DK" : {
+                  
+                }
+              }
+            ]
+          }
+        },
+        {
+          "Predicate" : {
+            "name" : "intensity",
+            "args" : [
+              {
+                "VariableArg" : {
+                  "symbol" : "I"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "Predicate" : {
+            "name" : "timbre",
+            "args" : [
+              {
+                "VariableArg" : {
+                  "symbol" : "T"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "Predicate" : {
+            "name" : "pitch",
+            "args" : [
+              {
+                "VariableArg" : {
+                  "symbol" : "P"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "Predicate" : {
+            "name" : "rhythm",
+            "args" : [
+              {
+                "VariableArg" : {
+                  "symbol" : "R"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "Predicate" : {
+            "name" : "genre",
+            "args" : [
+              {
+                "VariableArg" : {
+                  "symbol" : "Genre"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

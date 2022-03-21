@@ -1,0 +1,350 @@
+{
+  "name" : "artist",
+  "args" : [
+    {
+      "FixedArg" : {
+        "symbol" : "Maluma"
+      }
+    },
+    {
+      "FixedArg" : {
+        "symbol" : "Columbia"
+      }
+    },
+    {
+      "FixedArg" : {
+        "symbol" : "latino"
+      }
+    }
+  ]
+}{
+  "name" : "artist",
+  "args" : [
+    {
+      "FixedArg" : {
+        "symbol" : "Camilo"
+      }
+    },
+    {
+      "FixedArg" : {
+        "symbol" : "Columbia"
+      }
+    },
+    {
+      "FixedArg" : {
+        "symbol" : "latino"
+      }
+    }
+  ]
+}{
+  "name" : "artist",
+  "args" : [
+    {
+      "FixedArg" : {
+        "symbol" : "Ricky Martin"
+      }
+    },
+    {
+      "FixedArg" : {
+        "symbol" : "Spain"
+      }
+    },
+    {
+      "FixedArg" : {
+        "symbol" : "latino"
+      }
+    }
+  ]
+}{
+  "name" : "artist",
+  "args" : [
+    {
+      "FixedArg" : {
+        "symbol" : "Alexandra"
+      }
+    },
+    {
+      "FixedArg" : {
+        "symbol" : "Serbia"
+      }
+    },
+    {
+      "FixedArg" : {
+        "symbol" : "serbian"
+      }
+    }
+  ]
+}{
+  "name" : "song",
+  "args" : [
+    {
+      "FixedArg" : {
+        "symbol" : "Desconocidos"
+      }
+    },
+    {
+      "Predicate" : {
+        "name" : "artist",
+        "args" : [
+          {
+            "FixedArg" : {
+              "symbol" : "Camilo"
+            }
+          },
+          {
+            "FixedArg" : {
+              "symbol" : "Columbia"
+            }
+          },
+          {
+            "FixedArg" : {
+              "symbol" : "latino"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Predicate" : {
+        "name" : "intensity",
+        "args" : [
+          {
+            "FixedArg" : {
+              "symbol" : "medium"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Predicate" : {
+        "name" : "timbre",
+        "args" : [
+          {
+            "FixedArg" : {
+              "symbol" : "medium"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Predicate" : {
+        "name" : "pitch",
+        "args" : [
+          {
+            "FixedArg" : {
+              "symbol" : "very_high"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Predicate" : {
+        "name" : "rhythm",
+        "args" : [
+          {
+            "FixedArg" : {
+              "symbol" : "very_high"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Predicate" : {
+        "name" : "genre",
+        "args" : [
+          {
+            "FixedArg" : {
+              "symbol" : "latino"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}{
+  "name" : "song",
+  "args" : [
+    {
+      "FixedArg" : {
+        "symbol" : "11 AM"
+      }
+    },
+    {
+      "Predicate" : {
+        "name" : "artist",
+        "args" : [
+          {
+            "FixedArg" : {
+              "symbol" : "Maluma"
+            }
+          },
+          {
+            "FixedArg" : {
+              "symbol" : "Columbia"
+            }
+          },
+          {
+            "FixedArg" : {
+              "symbol" : "latino"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Predicate" : {
+        "name" : "intensity",
+        "args" : [
+          {
+            "FixedArg" : {
+              "symbol" : "medium"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Predicate" : {
+        "name" : "timbre",
+        "args" : [
+          {
+            "FixedArg" : {
+              "symbol" : "medium"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Predicate" : {
+        "name" : "pitch",
+        "args" : [
+          {
+            "FixedArg" : {
+              "symbol" : "very_high"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Predicate" : {
+        "name" : "rhythm",
+        "args" : [
+          {
+            "FixedArg" : {
+              "symbol" : "very_high"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Predicate" : {
+        "name" : "genre",
+        "args" : [
+          {
+            "FixedArg" : {
+              "symbol" : "latino"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}{
+  "name" : "song",
+  "args" : [
+    {
+      "FixedArg" : {
+        "symbol" : "Ljubav ili ludilo"
+      }
+    },
+    {
+      "Predicate" : {
+        "name" : "artist",
+        "args" : [
+          {
+            "FixedArg" : {
+              "symbol" : "Alexandra"
+            }
+          },
+          {
+            "FixedArg" : {
+              "symbol" : "Serbia"
+            }
+          },
+          {
+            "FixedArg" : {
+              "symbol" : "serbian"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Predicate" : {
+        "name" : "intensity",
+        "args" : [
+          {
+            "FixedArg" : {
+              "symbol" : "medium"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Predicate" : {
+        "name" : "timbre",
+        "args" : [
+          {
+            "FixedArg" : {
+              "symbol" : "medium"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Predicate" : {
+        "name" : "pitch",
+        "args" : [
+          {
+            "FixedArg" : {
+              "symbol" : "very_high"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Predicate" : {
+        "name" : "rhythm",
+        "args" : [
+          {
+            "FixedArg" : {
+              "symbol" : "very_high"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Predicate" : {
+        "name" : "genre",
+        "args" : [
+          {
+            "FixedArg" : {
+              "symbol" : "serbian"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
