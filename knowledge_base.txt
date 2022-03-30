@@ -1,6 +1,7 @@
 {
   "interfaceData" : {
-    "systemName" : "Unshadowed Music",
+    "systemName" : "Unshadowed",
+    "systemDescription" : "Find nice music you've never heard of!",
     "inputFields" : [
       {
         "name" : "mood",

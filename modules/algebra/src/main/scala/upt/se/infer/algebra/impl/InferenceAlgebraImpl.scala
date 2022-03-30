@@ -17,7 +17,7 @@ private[algebra] final class InferenceAlgebraImpl[F[_]: Async]
     for {
       // Read Knowledge Base
       kb <- readKnowledgeBase()
-      premises = userInput.asPredicates ++ kb.premises
+      premises = userInput.asPremises ++ kb.premises
       // Apply fixed point algorithm and generate all possible premises using the inference rules
       newPremises = fixedPointRuleGeneration(premises, kb.rules)
       // Extract all premises that represent a goal
