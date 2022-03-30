@@ -4,13 +4,9 @@ import io.circe.generic.JsonCodec
 import upt.se.infer.StringOps
 
 @JsonCodec
-final case class UserInput(mood: String, country: String, likedArtist: String) {
+final case class UserInput(inputs: Map[String, String]) {
 
-  def premises =
-    List(
-      "mood" ~> FixedArg(mood),
-      "living_in" ~> FixedArg(country),
-      Predicate("liked_artist", List(FixedArg(likedArtist)))
-    )
+  def asPredicates: List[Predicate] =
+    inputs.map { case (input, value) => input ~> FixedArg(value) }.toList
 
 }

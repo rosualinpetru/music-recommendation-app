@@ -1,10 +1,12 @@
 package upt.se.infer.algebra
 
 import upt.se.infer.algebra.impl.InferenceAlgebraImpl
-import upt.se.infer.model.{Goal, UserInput}
+import upt.se.infer.model.{Conclusion, InterfaceData, UserInput}
 
 trait InferenceAlgebra[F[_]] {
-  def inferSolution(userInput: UserInput): F[List[Goal]]
+  def getInterfaceData(): F[InterfaceData]
+  def inferSolution(userInput: UserInput): F[List[Conclusion]]
+
 }
 
 object InferenceAlgebra {

@@ -14,6 +14,12 @@ final class InferenceRoutes[F[_]: Async](inferenceAlgebra: InferenceAlgebra[F])
   implicit val decoderInput: EntityDecoder[F, UserInput] = jsonOf[F, UserInput]
 
   def routes: HttpRoutes[F] = HttpRoutes.of {
+    case _ @ GET -> Root / "interface" =>
+      for {
+        data <- inferenceAlgebra.getInterfaceData()
+        response <- Ok(data.asJson)
+      } yield response
+
     case req @ POST -> Root / "input" =>
       for {
         userInput <- req.as[UserInput]

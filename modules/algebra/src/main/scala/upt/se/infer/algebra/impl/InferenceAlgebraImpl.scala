@@ -1,60 +1,40 @@
 package upt.se.infer.algebra.impl
 
-import fs2.io.file.Files
-import io.circe.syntax.EncoderOps
 import upt.se.infer.StringOps
 import upt.se.infer.algebra.InferenceAlgebra
-import upt.se.infer.model.{
-  Argument,
-  FixedArg,
-  Goal,
-  Predicate,
-  Rule,
-  UserInput,
-  VariableArg
-}
+import io.circe.parser.decode
+import upt.se.infer.model._
 
 import scala.annotation.tailrec
 
 private[algebra] final class InferenceAlgebraImpl[F[_]: Async]
     extends InferenceAlgebra[F] {
 
-  def inferSolution(userInput: UserInput): F[List[Goal]] = {
+  override def getInterfaceData(): F[InterfaceData] =
+    readKnowledgeBase().map(_.interfaceData)
+
+  def inferSolution(userInput: UserInput): F[List[Conclusion]] = {
     for {
-      // Read rules from the knowledge base
-      rules <- readRules()
-      // Read goal name from the database
-      goalName <- readGoalPredicateName()
-      // Set initial premises
-      database <- readDatabase()
-      premises = userInput.premises ++ database
+      // Read Knowledge Base
+      kb <- readKnowledgeBase()
+      premises = userInput.asPredicates ++ kb.premises
       // Apply fixed point algorithm and generate all possible premises using the inference rules
-      newPremises = fixedPointRuleGeneration(premises, rules)
+      newPremises = fixedPointRuleGeneration(premises, kb.rules)
       // Extract all premises that represent a goal
-      goals = newPremises.filter(_.name == goalName)
-      result = goals.map(p => Goal(p.name, p.args.map(_.toString)))
-      _ <- fs2.Stream
-        .emits(rules)
-        .map(_.asJson.toString())
-        .through(fs2.text.utf8.encode)
-        .through(Files[F].writeAll(fs2.io.file.Path("rules.txt")))
-        .compile
-        .drain
-      _ <- fs2.Stream
-        .emits(database)
-        .map(_.asJson.toString())
-        .through(fs2.text.utf8.encode)
-        .through(Files[F].writeAll(fs2.io.file.Path("database.txt")))
-        .compile
-        .drain
+      conclusions = newPremises.filter(_.name == kb.conclusionName)
+      result = conclusions.map(p => Conclusion(p.args.map(_.toString)))
     } yield result
   }
 
-  private def readRules(): F[List[Rule]] = Rule.rules().pure[F]
-
-  private def readDatabase(): F[List[Predicate]] = Predicate.database().pure[F]
-
-  private def readGoalPredicateName(): F[String] = "suggested_song".pure[F]
+  private def readKnowledgeBase(): F[KnowledgeBase] = {
+    fs2.io.file
+      .Files[F]
+      .readAll(fs2.io.file.Path("knowledge_base.txt"))
+      .through(fs2.text.utf8.decode)
+      .compile
+      .string
+      .flatMap(s => decode[KnowledgeBase](s).liftTo[F])
+  }
 
   // a rule is satisfiable if all conditions can be found among the premises
   // additionally, all conditions are not allowed to have variables

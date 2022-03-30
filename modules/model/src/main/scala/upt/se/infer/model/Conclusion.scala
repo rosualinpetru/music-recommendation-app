@@ -3,4 +3,4 @@ package upt.se.infer.model
 import io.circe.generic.JsonCodec
 
 @JsonCodec
-final case class Goal(name: String, values: List[String])
+final case class Conclusion(values: List[String])
