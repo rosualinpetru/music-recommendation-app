@@ -49,7 +49,7 @@ function App() {
       <div>
         <h3>{interfaceData.systemDescription}</h3>
         <Box sx={{ m: 2 }} />
-        <DynamicForm fields={interfaceData.inputFields} setSuggestion={setSuggestion} />
+        <DynamicForm fields={interfaceData.inputFields} setSuggestion={setSuggestion} setIsLoading={setIsLoading} />
       </div>
     )
   }

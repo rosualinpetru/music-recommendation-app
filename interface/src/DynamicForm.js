@@ -9,10 +9,17 @@ function DynamicForm(props) {
 
     function inferSolution(data) {
         let reqData = { inputs: data }
+        props.setIsLoading(true);
         solutionRequest(reqData).then((response) => {
+            props.setIsLoading(false)
             let suggestions = response.map((suggestion, i) =>
                 (<p style={{fontSize: "0.8em"}} key={i}>{suggestion.values.reduce((result, item) => (`${item}, ${result}`), "").slice(0, -2)} </p>))
-            props.setSuggestion(suggestions)
+            if(!suggestions.length){
+                props.setSuggestion(<p style={{fontSize: "0.8em"}}>We are sorry, we could not recommend a song!</p>)
+            } else {
+                props.setSuggestion(suggestions)
+            }
+
         })
     }
 
